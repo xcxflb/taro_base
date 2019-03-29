@@ -1,0 +1,115 @@
+.index{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    max-width: 750px;
+    overflow-x: hidden; 
+}
+.containers{
+   height: 100%;
+    width: 100%;
+
+     margin: 0 auto;
+    padding: 0;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(333deg, #6B46E3 0%, #5264EE 50%, #55A0EB 100%);
+    background-image: -moz-linear-gradient(333deg, #6B46E3 0%, #5264EE 50%, #55A0EB 100%);
+    background-image: -o-linear-gradient(333deg, #6B46E3 0%, #5264EE 50%, #55A0EB 100%);
+    background-image: linear-gradient(117deg, #6B46E3 0%, #5264EE 50%, #55A0EB 100%);
+}
+.logo_box{
+    position: relative;
+    height:2.2rem;
+    line-height:2.2rem;
+    display: flex;
+    justify-items: center;
+    width: 100%;
+
+ 
+}
+.logo_img{
+    position: absolute;
+    left: 0%;
+    border-radius: 0.3rem;
+    margin-top: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+}
+.logo_txt{
+    margin-left: 2.1rem;
+    color: #FFF;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.info_body{
+    width: 96%;
+  
+    margin: 0 auto;
+}
+.hr_box{
+    width:100%;
+    height: 0.8rem;
+    display: block;
+}
+.main_box{
+    width: 5rem;
+    height:5rem;
+    margin: 0 auto;
+}
+.big_logo{
+    width: 5rem;
+    height: 5rem;
+   
+}
+.game_title{
+    text-align: center;
+    font-size: 0.6rem;
+}
+.game_info{
+    font-size: 0.72rem;
+   color: #fff;
+   text-align: center;
+   margin-top: 0.2rem;
+   margin-bottom: 0.4rem;
+}
+.flex_box{
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem auto 0 auto;
+   
+}
+.main_img{
+    width: 48.5%;
+    height: 3.8rem;
+    border: 3px solid #5D7681;
+    border-radius: 0.2rem;
+}
+.list_box{
+    width: 48.5%;
+    height: 3.8rem;
+    border: 3px solid #5D7681;
+    border-radius: 0.2rem;
+}
+.game_img{
+    width: 100%;
+    height: 100%;
+    border-radius:0.2rem;
+
+}
+.sm_box{
+    height: 0.5rem;
+    width: 100%；
+}
+.footer{
+    width: 100%;
+    height: 1rem;
+
+    position: fixed;
+    bottom: 0.2rem;
+}
+.footer_msg{
+    text-align: center;
+    font-size: 0.5rem;
+}
