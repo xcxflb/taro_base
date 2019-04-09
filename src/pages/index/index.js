@@ -3,6 +3,10 @@ import { View, Text,Image } from '@tarojs/components'
 import './index.scss'
 import { AtButton,AtNavBar,AtGrid, AtSearchBar } from 'taro-ui'
 
+import { observer, inject } from '@tarojs/mobx'
+
+@inject('counterStore')
+@observer
 export default class Index extends Component {
 
   config = {
@@ -25,6 +29,13 @@ export default class Index extends Component {
       url: '/pages/activity/index'
     })
   }
+
+  increment = () => {
+    const { counterStore } = this.props
+    counterStore.increment()
+    console.log("zhixing增加")
+  }
+
   componentWillUnmount () { }
 
   componentDidShow () { }
@@ -32,6 +43,7 @@ export default class Index extends Component {
   componentDidHide () { }
 
   render () {
+    const { counterStore: { counter } } = this.props
     return (
       <View className='index'>
       <View className='containers'>
@@ -51,6 +63,9 @@ export default class Index extends Component {
       <span className='logo_txt'>同优网络</span>
       </View>
       <View className="hr_box"></View>
+      <AtButton type='primary' onClick={this.increment.bind(this)}>按钮文案</AtButton>
+      <Text>{counter}</Text>
+      
       <View className='main_box'>
       <Image src={require('../images/doudizhu.png')} className='big_logo'></Image>
       </View>
